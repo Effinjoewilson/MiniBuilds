@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Formatter</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <form action="/format" method="POST">
+    <h1>Text Formatter</h1>
+    <label for="text">Enter text:</label><br>
+    <textarea name="text" id="text" rows="5" cols="40" required></textarea><br><br>
+
+    <label>Choose format:</label><br>
+    <input type="radio" name="format" value="upper" required> UPPERCASE<br>
+    <input type="radio" name="format" value="lower"> lowercase<br>
+    <input type="radio" name="format" value="title"> Title Case<br><br>
+
+    <button type="submit">Format Text</button>
+  </form>
+</body>
+</html>
